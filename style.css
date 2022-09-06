@@ -62,7 +62,7 @@ a:hover {color: var(--primary-color);}
 }
 
 @media (min-width: 1400px) { 
-    .hero__heading {
+    .hero_heading {
         font-size: 3.2rem; 
     }
 }
@@ -92,6 +92,13 @@ a:hover {color: var(--primary-color);}
 
 .hero_content {
     z-index: 1;
+    top: 45%;
+    left: 20%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
 }
 
 .hero__content_width {
