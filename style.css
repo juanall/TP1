@@ -10,7 +10,9 @@ html {scroll-behavior: smooth ;}
 a{color: var(--primary-color);}
 a:hover {color: var(--primary-color);}
 
-
+.navabar {
+    color: #FBFCFC;
+}
 
 
 .container-custom {
@@ -35,15 +37,6 @@ a:hover {color: var(--primary-color);}
     z-index: 2;
 }
 
-#navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: beige;
-    z-index: 4;
-}
 
 .dropdown-nav-closeNavBtn {
     position: absolute;
@@ -169,5 +162,6 @@ a:hover {color: var(--primary-color);}
 .steps_section-thumbnail {
     height: auto;
 }
+
 
 
