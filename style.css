@@ -1,8 +1,9 @@
 :root {
-    --primary-color:#F73131;
+    --primary-color:#df1b1b;
     --primary-color-highlight:#f53838;
     --bs-body-bg:#FBFCFC;
     --bs--body-font-family: 'Poppins' , sans-serif;
+
 
 }
 
@@ -175,9 +176,137 @@ a:hover {color: var(--primary-color);}
 
 .nombres {
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 #offcanvasNavbar {
     background-color: transparent !important;
+}
+
+
+.accordion {
+    padding-bottom: 50px;
+}
+
+.aboutus {
+    font: var(--bs--body-font-family)
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+
+section .section-title, .about{
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font: var(--bs--body-font-family);
+    font-size: 30px;
+}
+
+#team .card {
+    background: #ffffff;
+    box-shadow: 10px 5px 5px dimgray;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 250px;
+}
+
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: var(--primary--letter-color)!important;
+}
+
+.frontside .card .card-body img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.descripcion {
+    font: var(--bs--body-font-family);
+    font-size: 20px;
+}
+
+.card-descripcion {
+    background: #ffffff;
+    box-shadow: 10px 5px 5px dimgray;
+    padding: 40px 0;
+    margin-bottom: 40px;
 }
